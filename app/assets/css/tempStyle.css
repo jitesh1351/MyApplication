@@ -1,0 +1,30 @@
+.gridStyle{
+    width: 35%;
+    height: 500px;
+    color: black;
+}
+.ag-header{
+    border-bottom: 1px solid !important; 
+       
+}
+html,body{
+   min-height:100%;
+   background: aliceblue;
+}
+.ag-row-even{
+    background: white !important;
+}
+.ag-row-odd{
+    background: #ffeeda !important;
+}
+.ag-body-viewport{
+    background: #ffeeda !important;
+}
+.ag-header-row{
+    background: #97bde8 !important;
+    font-weight: bold;
+}
+.ag-row-selected {
+    background: rgba(243, 188, 116, 0.54) !important;
+    color:#6d6565;
+}

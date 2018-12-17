@@ -1,0 +1,336 @@
+/**** Container Style 1 *****/
+.agGridContainer{
+	height: 180px;
+	padding: 0;
+	background: white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	color: #556c88;
+}
+.ag-header-container {
+    background: White!important;
+}
+.ag-scrolls .ag-row:nth-of-type(even) {
+     background: white;
+}
+
+.ag-scrolls .ag-row:nth-of-type(odd) {
+     background: #fff;
+}
+.ag-bootstrap .ag-header-cell {
+	background: white;
+}
+.ag-scrolls .ag-header-row{
+	background: white;
+}
+.ag-scrolls .ag-row {
+	background: white;
+	border-top: 1px solid #A4A4A4;
+}
+
+/***** Container Style 2 ****/
+.agGridContainer{
+	height: 180px;
+	padding: 15px;
+	background: #F1F3F6;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	color: #556c88;
+}
+.ag-header-container {
+    background: #F1F3F6;
+}
+.ag-scrolls .ag-row:nth-of-type(even) {
+     background: white;
+}
+.ag-scrolls .ag-row:nth-of-type(odd) {
+     background: #fff;
+}
+.ag-bootstrap .ag-header-cell {
+	background: #F1F3F6;
+}
+
+.ag-scrolls .ag-row {
+	background: white;
+	border-top: 0;
+}
+/****** Table*****/
+
+.ag-bootstrap .ag-row-odd:nth-of-type(even).ag-row-selected,
+.ag-bootstrap .ag-row-even:nth-of-type(even).ag-row-selected {
+    background: #257DCF;
+}
+.ag-bootstrap .ag-header-icon {
+    color: #556c88 !important;
+    stroke: none;
+    fill: #556c88 !important;
+	cursor: pointer;
+}
+.ag-bootstrap .ag-cell-focus {
+	border: 0 !important;
+}
+.ag-bootstrap .ag-header-cell-label {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px !important;
+}
+.ag-bootstrap .ag-row-odd.ag-row-selected,
+.ag-bootstrap .ag-row-even.ag-row-selected {
+	background: #257DCF;
+	color: white;
+}
+.ag-bootstrap .ag-header {
+	color: #556c88;
+	background: white;
+}
+.ag-bootstrap .ag-menu .ag-tab-header {
+	background: #F1F3F6;
+}
+.ag-bootstrap  .ag-menu {
+	background: white;
+	border: 1px solid #A4A4A4;
+}
+.ag-bootstrap .ag-menu-option-active {
+	background: #257DCF;
+	color: white;
+}
+.ag-header-cell-text {
+	float: left;
+	margin-right: 15px;
+}
+/***MultiSelect***/
+
+.ag-popup-editor ul {
+	border: 1px solid #A4A4A4;
+	margin: 0;
+	padding: 5px;
+}
+.ag-popup-editor ul li {
+	padding: 5px;
+}
+.ag-popup-editor input[type="text"]{
+	font-size: 12px;
+	color: #556c88;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.ag-CustomMultiSelect {
+	float: none;
+	background: white;
+}
+.ag-monthpicker div{
+	border: 1px solid #A4A4A4;
+	border-top: 0;
+}
+.ag-monthpicker ul li {
+	float: left;
+}
+.ag-monthpicker div div {
+	border-bottom: 0;
+	background-color: white !important;
+	color: #556c88;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.ag-monthpicker div div a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #556c88;
+	vertical-align: middle;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.monthYearWrapper {
+	border: 1px solid #A4A4A4;
+	color: #556c88;
+	text-align: center;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.monthYearWrapper a {
+	text-decoration: none;
+	font-size: 24px;
+	color: #556c88;
+    vertical-align: middle;
+}
+
+/***** Date Picker ****/
+.ag-datepicker .date{
+	display: inline-block;
+    width: 29px;
+    text-align: center;
+    margin: 5px;
+}
+.ag-datepicker .weeks{
+	color: #556c88;
+	float: left;
+    width: 39px;
+    text-align: center;
+    background-color: #F1F3F6;
+    font-size: 12px;
+}
+.ag-bl .date a,
+.ag-bl .month a {
+	font-size: 12px;
+	color: #556c88;
+	text-decoration: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.ag-datepicker .year{
+	margin: 0 10px;
+	width: 200px;
+  	display: inline-block;
+}
+.ag-datepicker .range{
+	border: 1px solid #A4A4A4;
+	background: #F1F3F6;
+	color: #556c88;
+	padding: 5px;
+}
+.ag-datepicker .startRange{
+	display: inline-block;
+ 	width: 50%;
+}
+
+/***** Month Picker ****/
+.ag-monthpicker .range{
+	border: 1px solid #A4A4A4;
+	background-color: #F1F3F6;
+}
+.ag-monthpicker .startRange{
+	display: inline-block;
+ 	width: 50%;
+}
+.ag-monthpicker .ag-bl .month{
+	float: left;
+    width: 54px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/**** Input ****/
+.ag-cell-edit-input {
+	height: 24px;
+	font-size: 12px;
+	border-radius: 8px;
+	display: inline-block;
+	width: 80%;
+    padding: 0 10px;
+    color: #556c88;
+    border: 1px solid #A4A4A4;
+    margin: 2px 0;
+}
+.ag-bootstrap .ag-cell-not-inline-editing {
+	padding: 8px 5px;
+}
+.ag-ltr textarea:hover,
+.ag-ltr input:hover,
+.ag-ltr textarea:active,
+.ag-ltr input:active,
+.ag-ltr textarea:focus,
+.ag-ltr input:focus,
+.ag-ltr div:focus {
+    outline:0px !important;
+}
+.ag-large-textarea textarea{
+	font-size: 12px;
+    border-radius: 5px;
+    padding: 10px;
+	color: #556c88;
+}
+
+/**** Checkbox *****/
+/* input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+	margin-left: 10px;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+	padding-left: 25px;
+}
+input[type=checkbox] + label:before {
+    border-radius: 3px;
+}
+input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    font-size: 15px;
+    color: #4A90E2;
+    text-align: center;
+    line-height: 16px;
+    padding: 0px;
+    font-weight: normal;
+}
+.ag-row-selected input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 16px;
+    padding: 0px;
+    font-weight: normal;
+}
+label.chkbox {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+ */
+/******* Radio *******/
+input[type=radio] + label {
+	padding-left: 10px;
+}
+input[type=radio] {
+	position: relative;
+	width: 16px;
+	height: 16px;
+	color: #4A90E2;
+	margin-top: 0;
+    margin-left: 0;
+	vertical-align: middle;
+}
+input[type=radio]::-ms-check {
+  color: #4A90E2;
+}
+input[type=radio]:before {
+  content: "";
+  visibility: visible;
+  position: absolute;
+  color: #4A90E2;
+  border: 1px solid #A4A4A4;
+	background: white;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+input[type=radio]:checked:before {
+  content: "\2022";
+  color: #4A90E2;
+  font-size: 34px;
+  line-height: 14px;
+  text-align: center;
+  background-color: white;
+}
+/******/
+.ag-paging-page-summary-panel{
+	float: right;
+}
+.header-textwrap {
+    word-wrap: break-word;
+    white-space: normal;
+}
+.ag-fresh .ag-row.dirty-row {
+    background-color: #f4ea26;
+}
+.ag-grid-background {
+	background: white;
+}

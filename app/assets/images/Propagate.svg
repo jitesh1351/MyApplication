@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Channel-Group-Split" transform="translate(-602.000000, -993.000000)" fill="#FFFFFF">
+            <g id="Copy" transform="translate(602.000000, 993.000000)">
+                <path d="M6.84,0 L6.84,2.16 L7.56,2.88 L7.56,0.72 L12.96,0.72 L12.96,4.68 L12.96,5.04 L13.32,5.04 L17.28,5.04 L17.28,14.4 L11.88,14.4 L11.88,15.12 L18,15.12 L18,4.53375 L13.46625,0 L6.84,0 Z M13.68,1.22625 L16.77375,4.32 L13.68,4.32 L13.68,1.22625 Z M0,2.88 L0,3.24 L0,17.64 L0,18 L0.36,18 L10.8,18 L11.16,18 L11.16,17.64 L11.16,7.56 L11.16,7.41375 L11.05875,7.30125 L6.73875,2.98125 L6.62625,2.88 L6.48,2.88 L0.36,2.88 L0,2.88 Z M0.72,3.6 L6.12,3.6 L6.12,7.56 L6.12,7.92 L6.48,7.92 L10.44,7.92 L10.44,17.28 L0.72,17.28 L0.72,3.6 Z M6.84,4.1175 L9.9225,7.2 L6.84,7.2 L6.84,4.1175 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

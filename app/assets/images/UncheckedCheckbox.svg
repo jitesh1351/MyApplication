@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Unchecked Checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Process-Approvals" transform="translate(-44.000000, -186.000000)" fill="#9B9B9B">
+            <g id="Rows" transform="translate(41.000000, 186.000000)">
+                <g id="Row1">
+                    <g id="Unchecked-Checkbox" transform="translate(3.000000, 0.000000)">
+                        <path d="M18.5,0.846153846 C19.964,0.846153846 21.1538462,2.036 21.1538462,3.5 L21.1538462,18.5 C21.1538462,19.964 19.964,21.1538462 18.5,21.1538462 L3.5,21.1538462 C2.036,21.1538462 0.846153846,19.964 0.846153846,18.5 L0.846153846,3.5 C0.846153846,2.036 2.036,0.846153846 3.5,0.846153846 L18.5,0.846153846 L18.5,0.846153846 Z M17.875,0 L4.125,0 C1.848,0 0,1.848 0,4.125 L0,17.875 C0,20.152 1.848,22 4.125,22 L17.875,22 C20.152,22 22,20.152 22,17.875 L22,4.125 C22,1.848 20.152,0 17.875,0 L17.875,0 Z" id="Fill-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="10px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>Outgoing Data</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="20 17.6293636 20 0.0371657269 0.024 0.0371657269 0.024 17.6293636 20 17.6293636"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Create-Campaign-" transform="translate(-743.000000, -998.000000)">
+            <g id="Bottom-Controls" transform="translate(0.000000, 971.000000)">
+                <g id="Re-Validate-Bot" transform="translate(735.000000, 16.000000)">
+                    <g id="Outgoing-Data" transform="translate(8.000000, 7.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M15.1376,4.03845455 C14.9876,4.06545455 14.8672,4.17754545 14.8248,4.32604545 C14.7828,4.47618182 14.8264,4.63613636 14.9376,4.74127273 L18.6124,8.5 L0.4,8.5 L0.3624,8.5 L0.3248,8.5 C0.1048,8.52086364 -0.058,8.72213636 -0.0376,8.94754545 C-0.0172,9.17295455 0.1796,9.33904545 0.4,9.31818182 L18.6124,9.31818182 L14.9376,13.0769091 C14.8188,13.1759091 14.764,13.3338182 14.7984,13.4872273 C14.8328,13.639 14.95,13.7588636 15.0984,13.7940455 C15.2484,13.8292273 15.4032,13.7735909 15.5,13.6520909 L19.8624,9.20322727 L20.1376,8.90909091 L19.8624,8.61495455 L15.5,4.16609091 C15.4172,4.07527273 15.2968,4.02863636 15.1752,4.03845455 L15.1376,4.03845455 L15.1376,4.03845455 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

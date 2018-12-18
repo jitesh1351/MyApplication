@@ -92,24 +92,7 @@ class MyApplication extends React.Component {
     }
   }
   componentDidMount() {
-    axios.get(`http://localhost:5056/school/v1/students`)
-      .then(res => {
-        this.setState({ gridData: res.data });
-        const studentData = this.state.gridData;
-        for (let i = 0; i < studentData.length; i++) {
-          if (studentData[i].fullTime) {
-            studentData[i].fullTime = 'Yes';
-          }
-          else {
-            studentData[i].fullTime = 'No'
-          }
-        }
-        this.setState({
-          gridData: studentData
-        }, function () { })
-      })
-
-     // this.props.dispatch(getGridData); 
+     this.props.dispatch(getGridData()); 
   }
 
   componentWillReceiveProps(nextProps) {

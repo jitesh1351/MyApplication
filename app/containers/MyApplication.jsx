@@ -135,6 +135,11 @@ class MyApplication extends React.Component {
   onGridReady(gridOptions) {
     this.gridApi = gridOptions.api;
   }
+  /**
+ * @desc detailScreenValidation, function to open new window for Detail Screen
+ * @param {null} null
+ * @returns {null} null
+*/
   detailScreenValidation() {
     let selectedRow = this.gridApi.getSelectedRows();
     let studentId = selectedRow[0].id;
@@ -144,6 +149,11 @@ class MyApplication extends React.Component {
     let url = 'http://localhost:4444/#/DetailScreen' + '/studentId=' + studentId + '&studentName=' + studentName + '&passportNo=' + passportNo + '&favourite=' + favourite;
     window.open(url);
   }
+  /**
+ * @desc updateData, function to update data of the grid row
+ * @param {null} null
+ * @returns {null} null
+*/
   updateData(){
     let selectedRow = this.gridApi.getSelectedRows();
     let fullTimeFlag = false;

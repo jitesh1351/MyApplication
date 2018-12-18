@@ -4,7 +4,7 @@ export const GRID_DATA_ERROR = 'GRID_DATA_ERROR'
 import getAPIUrl from 'rootSource/apiConfig';
 import axios from 'axios';
 /**
- * @desc getCountryName, To get country Name
+ * @desc getGridData, To fetch grid Data
  * @returns {object} payload data
 */
 export function getGridData() {

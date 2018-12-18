@@ -2,9 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
-
-// import Style from '../node_modules/react-sugar-ui/lib/Style';
-
 import store from './store';
 
 const rootElement = document.getElementById('root');

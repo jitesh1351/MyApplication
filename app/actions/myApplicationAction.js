@@ -4,10 +4,10 @@ export const GRID_DATA_ERROR = 'GRID_DATA_ERROR'
 import getAPIUrl from 'rootSource/apiConfig';
 import axios from 'axios';
 /**
- * @desc getGridData, To fetch grid Data
+ * @desc fetchStudentGridData, To fetch grid Data
  * @returns {object} payload data
 */
-export function getGridData() {
+export function fetchStudentGridData() {
   const url = getAPIUrl('student');
   return (dispatch) => {
     axios.get(url)

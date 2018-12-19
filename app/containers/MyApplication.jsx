@@ -1,5 +1,5 @@
 import React from 'react';
-import { getGridData } from '../actions/myApplicationAction';
+import { fetchStudentGridData } from '../actions/myApplicationAction';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import { AgGridReact } from 'ag-grid-react';
@@ -68,12 +68,12 @@ class MyApplication extends React.Component {
         rowHeight: 30,
         rowSelection: 'single',
         onGridReady: this.onStudentGridReady.bind(this),
-        onSelectionChanged: (item) => this.onGridRowSelection()
+        onSelectionChanged: () => this.onGridRowSelection()
       }
     }
   }
   componentDidMount() {
-    this.props.dispatch(getGridData());
+    this.props.dispatch(fetchStudentGridData());
   }
 
   componentWillReceiveProps(nextProps) {

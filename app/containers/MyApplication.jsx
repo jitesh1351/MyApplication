@@ -3,6 +3,7 @@ import { fetchStudentGridData } from '../actions/myApplicationAction';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import { AgGridReact } from 'ag-grid-react';
+import getAPIUrl from 'rootSource/apiConfig';
 // import CSS
 import 'app_assets/css/grid/ag-grid.css';
 import 'app_assets/css/grid/theme-fresh.css';
@@ -157,7 +158,7 @@ class MyApplication extends React.Component {
       "passportNumber": selectedRow[0].passportNumber,
       "fullTime": fullTimeFlag
     }
-    let url = 'http://localhost:5056/school/v1/students';
+    const url = getAPIUrl('student');
     axios({ method: "PUT", url, data: payload }).
       then(() => {
         alert("Data Saved Sucessfully");

@@ -1,8 +1,8 @@
 import {
-  GRID_DATA,GRID_DATA_ERROR
+  GRID_DATA, GRID_DATA_ERROR
 } from '../actions/myApplicationAction';
 const initialState = {
-  studentData : []
+  studentData: []
 };
 /**
    * @desc myApplicationReducer, This function will take oldstate and payload as parameter and return new state value
@@ -11,19 +11,19 @@ const initialState = {
    * @return {object} new state value
    */
 export default function myApplicationReducer(state = initialState, action) {
-  switch(action.type) {
-  case GRID_DATA: {
-    return {
-      ...state, studentData: action.payload
-    };
-  }
-  case GRID_DATA_ERROR: {
-    return {
-      ...state, studentData: action.payload
-    };
-  }
-  default: {
-    return state;
-  }
+  switch (action.type) {
+    case GRID_DATA: {
+      return {
+        ...state, studentData: action.payload
+      };
+    }
+    case GRID_DATA_ERROR: {
+      return {
+        ...state, studentData: action.payload
+      };
+    }
+    default: {
+      return state;
+    }
   }
 }

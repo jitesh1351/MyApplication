@@ -8,7 +8,7 @@ const INT_BASE = "http://localhost";
    * @return {string} apiBase url
    */
 function getAPIBase() {
-  
+
   return INT_BASE;
 }
 /**

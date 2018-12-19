@@ -54,7 +54,7 @@ class MyApplication extends React.Component {
           field: "fullTime",
           width: 169,
           editable: true,
-          cellRenderer: (item) => this.CustomCombobox(item),
+          cellRenderer: (item) => this.favouriteValue(item),
           cellEditor: 'agRichSelectCellEditor',
           cellEditorParams: {
             cellHeight: 50,
@@ -67,32 +67,13 @@ class MyApplication extends React.Component {
         enableSorting: true,
         rowHeight: 30,
         rowSelection: 'single',
-        onGridReady: this.onGridReady.bind(this),
-        onSelectionChanged: (item) => this.rowSelection(item)
+        onGridReady: this.onStudentGridReady.bind(this),
+        onSelectionChanged: (item) => this.onGridRowSelection()
       }
     }
   }
-  CustomCombobox(params) {
-    return this.state.gridData[params.rowIndex].fullTime
-
-  }
-  rowSelection(params) {
-    let selectedRow = this.gridApi.getSelectedRows();
-    if (selectedRow.length === 1) {
-      this.setState({
-        detailScreenFlag: true,
-        updateRecordFlag: true
-      })
-    }
-    else {
-      this.setState({
-        detailScreenFlag: false,
-        updateRecordFlag: false
-      })
-    }
-  }
   componentDidMount() {
-     this.props.dispatch(getGridData()); 
+    this.props.dispatch(getGridData());
   }
 
   componentWillReceiveProps(nextProps) {
@@ -109,21 +90,48 @@ class MyApplication extends React.Component {
       gridData: studentData
     }, function () { })
   }
-
   /**
- * @desc onGridReady, function to be called when grid is ready
+   * @desc favouriteValue, return favourite Value in the grid
+   * @param {object} params params
+   * @returns {string} string
+  */
+  favouriteValue(params) {
+    return this.state.gridData[params.rowIndex].fullTime
+
+  }
+  /**
+ * @desc onGridRowSelection, function to be called when student grid data is selected
+ * @returns {null} null
+*/
+  onGridRowSelection() {
+    let selectedRow = this.gridApi.getSelectedRows();
+    if (selectedRow.length === 1) {
+      this.setState({
+        detailScreenFlag: true,
+        updateRecordFlag: true
+      })
+    }
+    else {
+      this.setState({
+        detailScreenFlag: false,
+        updateRecordFlag: false
+      })
+    }
+  }
+  /**
+ * @desc onStudentGridReady, function to be called when grid is ready
  * @param {string} gridOptions gridOptions
  * @returns {null} null
 */
-  onGridReady(gridOptions) {
+  onStudentGridReady(gridOptions) {
     this.gridApi = gridOptions.api;
   }
   /**
- * @desc detailScreenValidation, function to open new window for Detail Screen
+ * @desc handleDetailScreenValidation, function to open new window for Detail Screen
  * @param {null} null
  * @returns {null} null
 */
-  detailScreenValidation() {
+  handleDetailScreenValidation() {
     let selectedRow = this.gridApi.getSelectedRows();
     let studentId = selectedRow[0].id;
     let studentName = selectedRow[0].name;
@@ -133,30 +141,30 @@ class MyApplication extends React.Component {
     window.open(url);
   }
   /**
- * @desc updateData, function to update data of the grid row
+ * @desc handleUpdatedData, function to update data of the grid row
  * @param {null} null
  * @returns {null} null
 */
-  updateData(){
+  handleUpdatedData() {
     let selectedRow = this.gridApi.getSelectedRows();
     let fullTimeFlag = false;
-    if((selectedRow[0].fullTime).toUpperCase() === 'YES'){
+    if ((selectedRow[0].fullTime).toUpperCase() === 'YES') {
       fullTimeFlag = true;
     }
     let payload = {
       "id": selectedRow[0].id,
       "name": selectedRow[0].name,
       "passportNumber": selectedRow[0].passportNumber,
-      "fullTime":fullTimeFlag
+      "fullTime": fullTimeFlag
     }
     let url = 'http://localhost:5056/school/v1/students';
-    axios({ method: "PUT", url, data: payload}).
-        then(() => {
-          alert("Data Saved Sucessfully");
-        }).
-        catch(function (error) {
-          console.log("There is an error while saving the data");
-        });
+    axios({ method: "PUT", url, data: payload }).
+      then(() => {
+        alert("Data Saved Sucessfully");
+      }).
+      catch(function (error) {
+        console.log("There is an error while saving the data");
+      });
 
   }
   render() {
@@ -174,8 +182,8 @@ class MyApplication extends React.Component {
           />
         </div>
         <div className="col-md-6 form-inline">
-          <button className="col-md-2" onClick={() => this.detailScreenValidation()} disabled={!this.state.detailScreenFlag}> Detail Screen</button>
-          <button className="col-md-2" onClick={() => this.updateData()} disabled={!this.state.updateRecordFlag}> Update Data</button>
+          <button className="col-md-2" onClick={() => this.handleDetailScreenValidation()} disabled={!this.state.detailScreenFlag}> Detail Screen</button>
+          <button className="col-md-2" onClick={() => this.handleUpdatedData()} disabled={!this.state.updateRecordFlag}> Update Data</button>
         </div>
 
       </div>
